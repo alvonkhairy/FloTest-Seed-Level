@@ -1,10 +1,11 @@
-/* ===== RESET & GLOBAL ===== */
+/* ===== RESET ===== */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ===== GLOBAL ===== */
 :root {
     --primary-blue: #1e40af;
     --light-blue: #3b82f6;
@@ -31,7 +32,7 @@ body {
     flex-direction: column;
 }
 
-/* ===== HEADER & NAVIGATION ===== */
+/* ===== LAYOUT ===== */
 header {
     background: linear-gradient(135deg, var(--primary-blue) 0%, var(--light-blue) 100%);
     color: var(--white);
@@ -97,6 +98,8 @@ section h2 {
     font-weight: 700;
     color: var(--primary-blue);
 }
+
+/* ===== COMPONENTS ===== */
 
 /* ===== FORM INPUTS ===== */
 input {
@@ -501,7 +504,7 @@ footer {
     border-radius: 10px;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ===== UTILITIES ===== */
 @media (max-width: 768px) {
     main {
         padding: 25px 15px;
