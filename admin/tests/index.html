@@ -1,20 +1,82 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/style.css">
-    <title>Document</title>
+    <title>Daftar Tes - Admin</title>
 </head>
 <body>
     <header>
-    <nav></nav>
+        <h1>Dashboard Admin</h1>
+
+        <a href="../dashboard.html">
+            <button type="button" class="logout-btn">Dashboard</button>
+        </a>
+
+        <a href="create.html">
+            <button type="button" class="logout-btn">Buat Tes</button>
+        </a>
     </header>
 
     <main>
-    <section></section>
+        <section>
+            <div>
+                <h1>Daftar Tes</h1>
+            </div>
+
+            <table class="users-table">
+                <thead>
+                    <tr>
+                        <th>Judul Tes</th>
+                        <th>Mata Pelajaran</th>
+                        <th>Durasi</th>
+                        <th>Jumlah Soal</th>
+                        <th>Status</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ujian Matematika</td>
+                        <td>Matematika</td>
+                        <td>60 menit</td>
+                        <td>25</td>
+                        <td>Aktif</td>
+                        <td class="action-buttons">
+                            <a class="btn-edit" href="edit.html?test=1">Edit</a>
+                            <a class="btn-delete" href="#" onclick="alert('Dummy delete')">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ujian Bahasa Inggris</td>
+                        <td>Bahasa Inggris</td>
+                        <td>45 menit</td>
+                        <td>20</td>
+                        <td>Aktif</td>
+                        <td class="action-buttons">
+                            <a class="btn-edit" href="edit.html?test=2">Edit</a>
+                            <a class="btn-delete" href="#" onclick="alert('Dummy delete')">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ujian Fisika</td>
+                        <td>Fisika</td>
+                        <td>50 menit</td>
+                        <td>22</td>
+                        <td>Tidak Aktif</td>
+                        <td class="action-buttons">
+                            <a class="btn-edit" href="edit.html?test=3">Edit</a>
+                            <a class="btn-delete" href="#" onclick="alert('Dummy delete')">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 
-<footer></footer>
+    <footer>
+        <p>&copy; 2026 FloTest</p>
+    </footer>
 </body>
 </html>

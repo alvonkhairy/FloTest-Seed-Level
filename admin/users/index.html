@@ -1,20 +1,121 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/style.css">
-    <title>Document</title>
+    <title>Users - Admin</title>
 </head>
 <body>
     <header>
-    <nav></nav>
+
+        <h1>Dashboard Admin</h1>
+       
+        <a href="../dashboard.html">
+            <button type="button" class="logout-btn">Dashboard</button>
+        </a>
+
+        <a href="create.html">
+            <button type="button" class="logout-btn">Buat Tes</button>
+        </a>
+       
     </header>
 
     <main>
-    <section></section>
+        <section>
+            <div>
+                    <h1>Daftar Users</h1>
+            </div>
+
+            <table class="users-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Admin User</td>
+                        <td>admin@example.com</td>
+                        <td>Admin</td>
+                        <td class="action-buttons">
+                            <a class="btn-edit" href="edit.html?user=1">Edit</a>
+                            <a class="btn-delete" href="#" onclick="alert('Dummy delete')">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mentor Agama</td>
+                        <td>Sukri@example.com</td>
+                        <td>Mentor</td>
+                        <td class="action-buttons">
+                            <a class="btn-edit" href="edit.html?user=2">Edit</a>
+                            <a class="btn-delete" href="#" onclick="alert('Dummy delete')">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Mentor Mtk</td>
+                        <td>Hasan@example.com</td>
+                        <td>Mentor</td>
+                        <td class="action-buttons">
+                            <a class="btn-edit" href="edit.html?user=3">Edit</a>
+                            <a class="btn-delete" href="#" onclick="alert('Dummy delete')">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Menti Messi</td>
+                        <td>Messii@example.com</td>
+                        <td>Menti</td>
+                        <td class="action-buttons">
+                            <a class="btn-edit" href="edit.html?user=4">Edit</a>
+                            <a class="btn-delete" href="#" onclick="alert('Dummy delete')">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Menti Ahmad</td>
+                        <td>Mahmud@example.com</td>
+                        <td>Menti</td>
+                        <td class="action-buttons">
+                            <a class="btn-edit" href="edit.html?user=5">Edit</a>
+                            <a class="btn-delete" href="#" onclick="alert('Dummy delete')">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Menti Waldo</td>
+                        <td>Walado@example.com</td>
+                        <td>Menti</td>
+                        <td class="action-buttons">
+                            <a class="btn-edit" href="edit.html?user=6">Edit</a>
+                            <a class="btn-delete" href="#" onclick="alert('Dummy delete')">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Menti Agus</td>
+                        <td>Agus@example.com</td>
+                        <td>Menti</td>
+                        <td class="action-buttons">
+                            <a class="btn-edit" href="edit.html?user=7">Edit</a>
+                            <a class="btn-delete" href="#" onclick="alert('Dummy delete')">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Menti Nuggy</td>
+                        <td>Nuggy@example.com</td>
+                        <td>Menti</td>
+                        <td class="action-buttons">
+                            <a class="btn-edit" href="edit.html?user=8">Edit</a>
+                            <a class="btn-delete" href="#" onclick="alert('Dummy delete')">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 
-<footer></footer>
+    <footer>
+        <p>&copy; 2026 FloTest</p>
+    </footer>
 </body>
 </html>
