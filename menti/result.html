@@ -3,65 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hasil Tes</title>
+    <title>Hasil Tes - Menti</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <style>
+        /* Minimal inline adjustments that rely on external stylesheet for main styles */
+        .result-card { max-width:900px; margin:1rem auto; padding:1rem; }
+        .score { font-size:2rem; margin:0 0 1rem 0; }
+        .answers-list { list-style:none; padding:0; margin:0; }
+        .answer-item { border:1px solid #e0e0e0; padding:0.75rem; margin-bottom:0.5rem; display:flex; gap:1rem; align-items:center; }
+        .answer-meta { flex:1; }
+        .badge { padding:0.25rem 0.5rem; border-radius:4px; font-weight:600; }
+        .correct { background:#d4edda; color:#155724; border:1px solid #c3e6cb; }
+        .incorrect { background:#f8d7da; color:#721c24; border:1px solid #f5c6cb; }
+        .icon { font-size:1.25rem; margin-right:0.5rem; }
+    </style>
 </head>
 <body>
 
     <header>
-
         <h1>Hasil Tes</h1>
-
         <a href="../index.html">
-            <button type="button" class="logout-btn">
-                Logout
-            </button>
+            <button type="button" class="logout-btn">Kembali</button>
         </a>
-
     </header>
 
     <main>
+        <section class="result-card">
+            <h2 class="test-title">Nama Tes: Dasar HTML &amp; CSS</h2>
 
-        <section class="mentor-table">
+            <div class="score-card">
+                <p class="score">Score: <strong>80</strong></p>
+            </div>
 
-            <article>
+            <h3>Rincian Jawaban</h3>
+            <ul class="answers-list">
+                <li class="answer-item">
+                    <div class="icon correct">✓</div>
+                    <div class="answer-meta">
+                        <div class="question-number">Soal 1</div>
+                        <div class="question-text">Apa tag untuk membuat paragraf?</div>
+                        <div class="answer-row">Jawaban Anda: <strong>A (&lt;p&gt;)</strong> — Jawaban Benar: <strong>A (&lt;p&gt;)</strong></div>
+                    </div>
+                    <div class="badge correct">Benar</div>
+                </li>
 
-                <h2>Nilai: 80</h2>
+                <li class="answer-item">
+                    <div class="icon incorrect">✗</div>
+                    <div class="answer-meta">
+                        <div class="question-number">Soal 2</div>
+                        <div class="question-text">Tag untuk gambar adalah?</div>
+                        <div class="answer-row">Jawaban Anda: <strong>B (&lt;div&gt;)</strong> — Jawaban Benar: <strong>A (&lt;img&gt;)</strong></div>
+                    </div>
+                    <div class="badge incorrect">Salah</div>
+                </li>
 
-            </article>
+            </ul>
 
-            <table border="1">
-
-                <tr>
-                    <th>Soal</th>
-                    <th>Jawaban Anda</th>
-                    <th>Jawaban Benar</th>
-                </tr>
-
-                <tr>
-                    <td>1</td>
-                    <td>✓ A</td>
-                    <td>✓ A</td>
-                </tr>
-
-            </table>
-
-            <nav class="back-nav">
-
+            <nav class="back-nav" style="margin-top:1rem;">
                 <a href="dashboard.html">
-                    <button type="button">
-                        Kembali ke Dashboard
-                    </button>
+                    <button type="button" class="btn-primary">Kembali ke Dashboard Menti</button>
                 </a>
-
             </nav>
-
         </section>
-
     </main>
 
     <footer>
-        <p>&copy; 2026 Flotest</p>
+        <p>&copy; 2026 FloTest</p>
     </footer>
 
 </body>

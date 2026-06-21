@@ -1,20 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../assets/css/style.css">
-    <title>Document</title>
+    <title>Buat Soal - Admin</title>
 </head>
 <body>
     <header>
-    <nav></nav>
+        <h1>Dashboard Admin - Buat Soal</h1>
+        <a href="../index.html">
+            <button type="button" class="logout-btn">Kembali</button>
+        </a>
     </header>
 
     <main>
-    <section></section>
+        <section class="form-section">
+            <h2>Buat Soal Baru</h2>
+
+            <form>
+                <div class="form-group">
+                    <label for="question-text">Question Text <span class="required-mark">*</span></label>
+                    <textarea id="question-text" name="question-text" placeholder="Masukkan pertanyaan" rows="4" required></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="option-a">Pilihan A <span class="required-mark">*</span></label>
+                    <input type="text" id="option-a" name="option-a" placeholder="Masukkan pilihan A" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="option-b">Pilihan B <span class="required-mark">*</span></label>
+                    <input type="text" id="option-b" name="option-b" placeholder="Masukkan pilihan B" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="option-c">Pilihan C <span class="required-mark">*</span></label>
+                    <input type="text" id="option-c" name="option-c" placeholder="Masukkan pilihan C" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="option-d">Pilihan D <span class="required-mark">*</span></label>
+                    <input type="text" id="option-d" name="option-d" placeholder="Masukkan pilihan D" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="correct-answer">Jawaban Benar <span class="required-mark">*</span></label>
+                    <select id="correct-answer" name="correct-answer" required>
+                        <option value="">-- Pilih Jawaban Benar --</option>
+                        <option value="a">Pilihan A</option>
+                        <option value="b">Pilihan B</option>
+                        <option value="c">Pilihan C</option>
+                        <option value="d">Pilihan D</option>
+                    </select>
+                </div>
+
+                <div class="form-actions">
+                    <button type="submit" class="btn-submit">Simpan Soal</button>
+                    <a href="../index.html" class="btn-cancel">Batal</a>
+                </div>
+            </form>
+        </section>
     </main>
 
-<footer></footer>
+    <footer>
+        <p>&copy; 2026 FloTest</p>
+    </footer>
 </body>
 </html>

@@ -1,20 +1,77 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/style.css">
-    <title>Document</title>
+    <title>Daftar Tes - Mentor</title>
 </head>
 <body>
     <header>
-    <nav></nav>
+        <h1>Daftar Tes Mentor</h1>
+
+        <a href="../dashboard.html">
+            <button type="button" class="logout-btn">Dashboard</button>
+        </a>
+
+        <a href="create.html">
+            <button type="button" class="logout-btn">Buat Tes</button>
+        </a>
     </header>
 
     <main>
-    <section></section>
+        <section>
+            <div>
+                <h1>Daftar Tes</h1>
+            </div>
+
+            <table class="users-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Status</th>
+                        <th>Questions Count</th>
+                        <th>Aksi</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ujian Matematika</td>
+                        <td>Published</td>
+                        <td>25</td>
+                        <td class="action-buttons">
+                            <a class="btn-view" href="questions/index.html?test=1">View Questions</a>
+                            <a class="btn-edit" href="edit.html?test=1">Edit</a>
+                            <a class="btn-delete" href="#" onclick="alert('Dummy delete'); return false;">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ujian Bahasa Inggris</td>
+                        <td>Draft</td>
+                        <td>18</td>
+                        <td class="action-buttons">
+                            <a class="btn-view" href="questions/index.html?test=2">View Questions</a>
+                            <a class="btn-edit" href="edit.html?test=2">Edit</a>
+                            <a class="btn-delete" href="#" onclick="alert('Dummy delete'); return false;">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Ujian Sains</td>
+                        <td>Archived</td>
+                        <td>12</td>
+                        <td class="action-buttons">
+                            <a class="btn-view" href="questions/index.html?test=3">View Questions</a>
+                            <a class="btn-edit" href="edit.html?test=3">Edit</a>
+                            <a class="btn-delete" href="#" onclick="alert('Dummy delete'); return false;">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 
-<footer></footer>
+    <footer>
+        <p>&copy; 2026 FloTest</p>
+    </footer>
 </body>
 </html>

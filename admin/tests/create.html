@@ -20,28 +20,28 @@
 
             <form>
                 <div class="form-group">
-                    <label for="test-name">Nama Tes</label>
-                    <input type="text" id="test-name" name="test-name" placeholder="Masukkan nama tes" required>
+                    <label for="title">Title <span class="required-mark">*</span></label>
+                    <input type="text" id="title" name="title" placeholder="Masukkan judul tes" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="test-description">Deskripsi Tes</label>
-                    <textarea id="test-description" name="test-description" placeholder="Masukkan deskripsi tes" rows="4" required></textarea>
+                    <label for="mentor">Mentor <span class="required-mark">*</span></label>
+                    <input type="text" id="mentor" name="mentor" placeholder="Masukkan nama mentor" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="test-subject">Mata Pelajaran</label>
-                    <input type="text" id="test-subject" name="test-subject" placeholder="Masukkan mata pelajaran" required>
+                    <label for="status">Status <span class="required-mark">*</span></label>
+                    <select id="status" name="status" required>
+                        <option value="">-- Pilih Status --</option>
+                        <option value="draft">Draft</option>
+                        <option value="published">Published</option>
+                        <option value="archived">Archived</option>
+                    </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="duration">Durasi (menit)</label>
-                    <input type="number" id="duration" name="duration" placeholder="Masukkan durasi" min="1" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="total_questions">Jumlah Soal</label>
-                    <input type="number" id="total_questions" name="total_questions" placeholder="Masukkan jumlah soal" min="1" required>
+                    <label for="question-count">Question Count <span class="required-mark">*</span></label>
+                    <input type="number" id="question-count" name="question-count" placeholder="Masukkan jumlah soal" min="1" required>
                 </div>
 
                 <div class="form-actions">

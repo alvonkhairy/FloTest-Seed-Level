@@ -20,28 +20,27 @@
 
             <form>
                 <div class="form-group">
-                    <label for="test-name">Nama Tes</label>
-                    <input type="text" id="test-name" name="test-name" value="Ujian Matematika" required>
+                    <label for="title">Title <span class="required-mark">*</span></label>
+                    <input type="text" id="title" name="title" value="Ujian Matematika" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="test-description">Deskripsi Tes</label>
-                    <textarea id="test-description" name="test-description" rows="4" required>Ujian materi aljabar dan geometri.</textarea>
+                    <label for="mentor">Mentor <span class="required-mark">*</span></label>
+                    <input type="text" id="mentor" name="mentor" value="Mentor Mtk" required>
                 </div>
 
                 <div class="form-group">
-                    <label for="test-subject">Mata Pelajaran</label>
-                    <input type="text" id="test-subject" name="test-subject" value="Matematika" required>
+                    <label for="status">Status <span class="required-mark">*</span></label>
+                    <select id="status" name="status" required>
+                        <option value="">-- Pilih Status --</option>
+                        <option value="aktif" selected>Aktif</option>
+                        <option value="tidak-aktif">Tidak Aktif</option>
+                    </select>
                 </div>
 
                 <div class="form-group">
-                    <label for="duration">Durasi (menit)</label>
-                    <input type="number" id="duration" name="duration" value="60" min="1" required>
-                </div>
-
-                <div class="form-group">
-                    <label for="total_questions">Jumlah Soal</label>
-                    <input type="number" id="total_questions" name="total_questions" value="25" min="1" required>
+                    <label for="question-count">Question Count <span class="required-mark">*</span></label>
+                    <input type="number" id="question-count" name="question-count" value="25" min="1" required>
                 </div>
 
                 <div class="form-actions">
