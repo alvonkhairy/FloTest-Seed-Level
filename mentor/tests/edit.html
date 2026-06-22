@@ -1,20 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../assets/css/style.css">
-    <title>Document</title>
+    <title>Edit Tes - Mentor</title>
 </head>
 <body>
     <header>
-    <nav></nav>
+        <h1>Edit Tes</h1>
+
+        <a href="../dashboard.html">
+            <button type="button" class="logout-btn">Dashboard</button>
+        </a>
+
+        <a href="index.html">
+            <button type="button" class="logout-btn">Daftar Tes</button>
+        </a>
     </header>
 
     <main>
-    <section></section>
+        <section class="mentor-form">
+            <h2>Perbarui Detail Tes</h2>
+
+            <form action="#" method="post">
+                <div class="form-group">
+                    <label for="title">Title</label>
+                    <input type="text" id="title" name="title" value="Ujian Matematika" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Description</label>
+                    <textarea id="description" name="description" rows="5" required>Deskripsi singkat tes matematika.</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="status">Status</label>
+                    <select id="status" name="status" required>
+                        <option value="draft">Draft</option>
+                        <option value="published" selected>Published</option>
+                        <option value="archived">Archived</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-submit">Perbarui Tes</button>
+            </form>
+        </section>
     </main>
 
-<footer></footer>
+    <footer>
+        <p>&copy; 2026 FloTest</p>
+    </footer>
 </body>
 </html>

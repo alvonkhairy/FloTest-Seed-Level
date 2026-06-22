@@ -1,20 +1,70 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../../../assets/css/style.css">
-    <title>Document</title>
+    <title>Daftar Soal - Mentor</title>
 </head>
 <body>
     <header>
-    <nav></nav>
+        <h1>Daftar Soal Mentor</h1>
+
+        <a href="../../dashboard.html">
+            <button type="button" class="logout-btn">Dashboard</button>
+        </a>
+
+        <a href="create.html">
+            <button type="button" class="logout-btn">Buat Soal</button>
+        </a>
     </header>
 
     <main>
-    <section></section>
+        <section>
+            <div>
+                <h1>Daftar Soal</h1>
+            </div>
+
+            <table class="users-table">
+                <thead>
+                    <tr>
+                        <th>No</th>
+                        <th>Question Text</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>Berapa hasil dari 2 + 2?</td>
+                        <td class="action-buttons">
+                            <a class="btn-edit" href="edit.html?question=1">Edit</a>
+                            <a class="btn-delete" href="#">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>Apa ibu kota Indonesia?</td>
+                        <td class="action-buttons">
+                            <a class="btn-edit" href="edit.html?question=2">Edit</a>
+                            <a class="btn-delete" href="#">Delete</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>Siapa penemu telepon?</td>
+                        <td class="action-buttons">
+                            <a class="btn-edit" href="edit.html?question=3">Edit</a>
+                            <a class="btn-delete" href="#">Delete</a>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
     </main>
 
-<footer></footer>
+    <footer>
+        <p>&copy; 2026 FloTest</p>
+    </footer>
 </body>
 </html>

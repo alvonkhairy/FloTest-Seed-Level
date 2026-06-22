@@ -714,7 +714,8 @@ footer {
 }
 
 .btn-edit,
-.btn-delete {
+.btn-delete,
+.btn-view {
     display: inline-block;
     padding: 10px 18px;
     border-radius: 8px;
