@@ -734,6 +734,44 @@ footer {
     transform: translateY(0);
 }
 
+.option{
+    display:flex;
+    align-items:center;
+    gap:15px;
+
+    padding:18px 20px;
+
+    margin-bottom:15px;
+
+    border:2px solid var(--gray-medium);
+
+    border-radius:10px;
+
+    cursor:pointer;
+
+    background:white;
+}
+
+.option input{
+
+    width:20px;
+    height:20px;
+
+    margin:0;
+
+    flex-shrink:0;
+
+}
+
+.option span{
+
+    flex:1;
+
+    font-size:18px;
+
+}
+
+
 /* ===== UTILITIES ===== */
 @media (max-width: 768px) {
     main {
